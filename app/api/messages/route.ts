@@ -1,7 +1,7 @@
 import prismadb from "@/lib/prismadb";
 import { NextResponse } from "next/server";
 
-export const POST = async (req: Request) => {
+export async function POST (req: Request) {
 
    try{
       const body = await req.json();
@@ -23,7 +23,7 @@ export const POST = async (req: Request) => {
 };
 
 
-export const GET = async (res: Response) => {
+export async function GET (res: Response){
 
    try{
 
