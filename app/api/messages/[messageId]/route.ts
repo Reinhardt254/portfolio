@@ -2,7 +2,7 @@ import prismadb from "@/lib/prismadb"
 import { NextResponse } from "next/server"
 
 export const DELETE = async (req: Request, res: Response,  
-   {params}: {params: {messageId: string}}
+   {params}: {params: {messageId: any}}
    ) => {
    try{
 
