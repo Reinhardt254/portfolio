@@ -5,7 +5,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import { Trash } from 'lucide-react'
 import toast, { Toaster } from 'react-hot-toast'
-import FormButton from './components/form'
+// import FormButton from './components/form'
 
 const Dashboard = async () => {
 
@@ -64,7 +64,7 @@ const Dashboard = async () => {
             <p className='text-blue-300'>{item.name}</p>
             <div className='pl-8'>
               <div>
-                <FormButton data={item.id} />
+                {/* <FormButton data={item.id} /> */}
               </div>
             </div>
             </div>
