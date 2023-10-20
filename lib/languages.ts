@@ -1,0 +1,94 @@
+export const languages = [
+   {
+      name:"HTML",
+      photo:"/languages/HTML5.jpg",
+   },
+   {
+      name:"CSS",
+      photo:"/languages/css.jpg",
+   },
+   {
+      name: "Python",
+      photo:"/languages/python.jpg",
+   },
+   {
+      name:"Typscript",
+      photo:"/languages/typscript.jpg",
+   },
+   {
+      name:"Javascript",
+      photo:"/languages/javascript.jpg",
+   },
+   {
+      name:"C++",
+      photo:"/languages/c++.jpg",
+   },
+   {
+      name:"Go",
+      photo:"/languages/go.png",
+   },
+   {
+      name:"React",
+      photo:"/languages/react.jpg",
+   },
+   {
+      name:"NextJS",
+      photo:"/languages/next.png",
+   },
+   {
+      name:"Tailwind",
+      photo:"/languages/tailwind.png",
+   },
+   {
+      name:"React Native",
+      photo:"/languages/reactnative.jpg",
+   },
+   {
+      name:"NodeJS",
+      photo:"/languages/nodejs.png",
+   },
+   {
+      name:"Express",
+      photo:"/languages/express.png",
+   },
+   {
+      name:"FastApi",
+      photo:"/languages/fastapi.png",
+   },
+   {
+      name:"MYSQL",
+      photo:"/languages/mysql.jpg",
+   },
+   {
+      name:"MongoDB",
+      photo:"/languages/mongodb.png",
+   },
+   {
+      name:"postgress",
+      photo:"/languages/postgress.png",
+   },
+   {
+      name:"Redis",
+      photo:"/languages/redis.png",
+   },
+   {
+      name:"Prisma",
+      photo:"/languages/prisma.png",
+   },
+
+   {
+      name:"SQL",
+      photo:"/languages/sql.jpg",
+   },
+]
+
+export const control = [
+   {
+      name:"Git",
+      photo:"/languages/git.jpg",
+   },
+   {
+      name:"Github",
+      photo:"/languages/Github.jpg",
+   },
+]
