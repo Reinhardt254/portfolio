@@ -1,7 +1,7 @@
 import prismadb from "@/lib/prismadb"
 import { NextResponse } from "next/server"
 
-export const DELETE = async (req: Request, 
+export const DELETE = async (req: Request, res: Response,  
    {params}: {params: {messageId: string}}
    ) => {
    try{
@@ -12,10 +12,10 @@ export const DELETE = async (req: Request,
          }
       })
 
-      return NextResponse.json(message)
+      return new Response(JSON.stringify(message))
    }catch(error){
       console.log(error)
-      return new NextResponse("An internal error occurred", {status: 500})
+      return new Response("An internal error occurred", {status: 500})
    }
 }
 
