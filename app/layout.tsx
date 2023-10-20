@@ -6,9 +6,23 @@ import { ClerkProvider } from '@clerk/nextjs'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+// export const metadata: Metadata = {
+//   title: 'ReinhardtDev',
+//   description: 'My profile',
+// }
+
+export const metadata = {
   title: 'ReinhardtDev',
-  description: 'My profile',
+  description: 'Portfolio',
+  icons:{
+    icon: "/logo/logo.png",
+    apple:"/logo/logo.png"
+  },
+  keywords:[
+    "software engineer",
+    "portfolio",
+    "web developer",
+   ]
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

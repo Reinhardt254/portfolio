@@ -15,7 +15,7 @@ export const DELETE = async (req: Request,
       return NextResponse.json(message)
    }catch(error){
       console.log(error)
-      new NextResponse("An internal error occurred", {status: 500})
+      return new NextResponse("An internal error occurred", {status: 500})
    }
 }
 
