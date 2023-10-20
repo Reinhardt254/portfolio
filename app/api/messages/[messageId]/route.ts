@@ -1,21 +1,21 @@
-// import prismadb from "@/lib/prismadb"
-// import { NextResponse } from "next/server"
+import prismadb from "@/lib/prismadb"
+import { NextResponse } from "next/server"
 
-// export const DELETE = async (req: Request, res: Response,  
-//    {params}: {params: {messageId: any}}
-//    ) => {
-//    try{
+export const DELETE = async (
+   {params}: {params: {messageId: string}}
+   ) => {
+   try{
 
-//       const message = await prismadb.message.deleteMany({
-//          where :{
-//             id: params.messageId
-//          }
-//       })
+      const message = await prismadb.message.deleteMany({
+         where :{
+            id: params.messageId
+         }
+      })
 
-//       return new Response(JSON.stringify(message))
-//    }catch(error){
-//       console.log(error)
-//       return new Response("An internal error occurred", {status: 500})
-//    }
-// }
+      return NextResponse.json(message)
+   }catch(error){
+      console.log(error)
+      return new NextResponse("An internal error occurred", {status: 500})
+   }
+}
 
