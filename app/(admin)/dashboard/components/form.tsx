@@ -10,7 +10,7 @@ interface formButtonProps{
 
 const FormButton: React.FC<formButtonProps> = ({data}) => {
 
-  const handleClick = async(data: string): Promise<any> => {
+  const handleClick = async(data: string) => {
     try{
       axios.delete(`/api/messages/${data}`)
       toast.success("successfully deleted")

@@ -44,13 +44,13 @@ const Dashboard = async () => {
         <div>
           <h1 className='text-blue-400 text-2xl pt-5 px-4'>Messages</h1>
         </div>
-           {/* <div>
-           {data && (<div>
+           <div>
+           {data.length === 0  && (<div>
              <p className='text-blue-300'>
               No messages available right now
             </p>
           </div>)}
-         </div> */}
+         </div>
       {data.map((item) =>( 
       <div 
         className=''
