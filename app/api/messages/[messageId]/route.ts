@@ -1,9 +1,9 @@
 import prismadb from "@/lib/prismadb"
 import { NextResponse } from "next/server"
 
-export const DELETE = async (
+export async function DELETE (req: Request, 
    {params}: {params: {messageId: string}}
-   ) => {
+   ){
    try{
 
       const message = await prismadb.message.deleteMany({
