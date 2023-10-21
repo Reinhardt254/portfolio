@@ -20,7 +20,7 @@ const Experience = () => {
                Clinical research studies
              </p>
           </div>
-          <p className='text-blue-300 text-xs pt-1'>Sept 2023 - ct 2023</p>
+          <p className='text-blue-300 text-xs pt-1'>Sept 2023 - oct 2023</p>
           <p className='text-gray-400 pt-2'>
             I worked as a lead software engineer in designing and building a research system. We used rescent technoligies which included NextS, Prisma, MySQL database, Tailwind and much more.
           </p>
