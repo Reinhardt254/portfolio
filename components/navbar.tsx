@@ -27,7 +27,7 @@ const Navbar = () => {
       active: pathname === "/skills",
     },
     {
-      href:"/projects",
+      href:"/experience",
       label:"Experience",
       active: pathname === "/experience",
     },
