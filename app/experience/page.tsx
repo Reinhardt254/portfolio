@@ -5,16 +5,16 @@ const Experience = () => {
     <div>
 
     <div className='h-full bg-slate-950 w-screen flex justify-center items-center py-3 pb-20 pr-4'>
-      <div className='md:w-1/2 flex flex-col  mx-2 space-y-3'>
+      <div className='md:w-2/5 flex flex-col  mx-2 space-y-5'>
         <div className='pt-2'>
           <div className='flex justify-start items-center pb-1'>
-          <h1 className='text-blue-400 font-bold text-3xl text-start'>
+          <h1 className='text-gray-300 font-bold text-3xl text-start'>
             My experience
           </h1>
           </div>
         </div>
         <div>
-          <div className='flex justify-start items-center'>
+          <div className='flex justify-start items-center flex-wrap'>
              <p className='text-blue-200 font-semibold md::text-xl pr-2 text-lg'>Lead Software Engineer</p>
              <p className='text-blue-300 '>
                Clinical research studies
@@ -26,7 +26,7 @@ const Experience = () => {
           </p>
         </div>
         <div>
-         <div className='flex justify-start items-center'>
+         <div className='flex justify-start items-center flex-wrap'>
              <h1 className='text-blue-200 font-semibold md:text-xl pr-2 text-lg'> Software Engineer Intern</h1>
              <p className='text-blue-300 '>
                Posta Kenya
@@ -38,7 +38,7 @@ const Experience = () => {
           </p>
         </div>
         <div>
-        <div className='flex justify-start items-center'>
+        <div className='flex justify-start items-center flex-wrap'>
              <h1 className='text-blue-200 font-semibold md:text-xl pr-2 text-lg'> System Engineer Intern</h1>
              <p className='text-blue-300 '>
                Rift Valley Training Institute
@@ -50,7 +50,7 @@ const Experience = () => {
           </p>
         </div>
         <div>
-         <div className='flex justify-start items-center'>
+         <div className='flex justify-start items-center flex-wrap'>
              <h1 className='text-blue-200 font-semibold md:text-xl pr-2 text-lg'>Freelancer Software Engineer</h1>
              <p className='text-blue-300 '>
                Upwork

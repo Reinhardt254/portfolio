@@ -9,10 +9,10 @@ const Projects = () => {
     <div className='px-2 w-screen bg-slate-950 border-white h-full flex items-center justify-center'>
       <div className='md:w-3/4 pr-8 md:pr-16'>
            <div className='pt-'>
-            <h1 className='text-center font-semibold text-blue-300 text-3xl pt-8 pb-3'>My recent work</h1>
+            <h1 className='text-center font-semibold text-gray-300 text-3xl pt-8 pb-3'>My recent work</h1>
           </div>
         <div className='space-y-4  pt-10 w-full'>
-        <div className='md:px-10 px-2'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
            <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://quoteme-reinhardt254.vercel.app">
@@ -40,7 +40,7 @@ const Projects = () => {
         </div>
         <div className='w-full'>
           <div className='pb-2 mt-0 '>
-            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl shadow-blue-300 rounded-b-lg pb-3 px-3'>
+            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-sm  rounded-b-lg pb-3 px-3'>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3 shadow-2xl shadow-blue-600'>Nextjs</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Tailwind</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>MongoDB</p>
@@ -50,7 +50,7 @@ const Projects = () => {
             </div> 
             </div>
         </div>
-        <div className='md:px-10 px-2'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://e-commerce-saas-admin-cj41d9r8c-reinhardt254.vercel.app">
@@ -77,7 +77,7 @@ const Projects = () => {
         </div>
         <div>
           <div className='pb-2'>
-            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl shadow-blue-300 rounded-b-lg pb-3 px-3'>
+            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl  rounded-b-lg pb-3 px-3'>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Nextjs</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Tailwind</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Prisma</p>
@@ -89,7 +89,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 '>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://helpingheartsfoundation.vercel.app">
@@ -116,7 +116,7 @@ const Projects = () => {
         </div>
         <div>
           <div className='pb-2 mt-3'>
-            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl shadow-blue-300 rounded-b-lg pb-3 px-3'>
+            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl  rounded-b-lg pb-3 px-3'>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>Nextjs</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>Tailwind</p>
             </div>
@@ -124,7 +124,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 '>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://g-p-3.vercel.app">
@@ -152,19 +152,19 @@ const Projects = () => {
         </div>
         <div>
           <div className=' mt-3 pb-10'>
-            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl shadow-blue-300 rounded-b-lg pb-3 px-3'>
+            <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl rounded-b-lg pb-3 px-3'>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>React</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>SAAS</p>
             </div>
             </div> 
             </div>
-            <div className='pb-10'>
+          </div>
+            <div className='pb-10 pt-5'>
              <Button 
              link="/contact"
              text="Convinced, hire me"
             />
            </div>
-          </div>
          </div>
         </div>
     </div>

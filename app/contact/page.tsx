@@ -8,6 +8,7 @@ import { FieldValues, useForm } from 'react-hook-form'
 import { z } from 'zod';
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"
+import { ChevronDownSquare } from 'lucide-react';
 
 const messageSchema = z.object({
   name: z.string().min(3, "name should be at least three characters"),
@@ -47,9 +48,10 @@ const Contact = () => {
     <div className='h-full bg-slate-950 w-screen pb-20 flex items-center justify-center'>
       <div className='h-full md:w-1/3 w-full px-8 sm:w-2/3'>
         <Toaster />
-        <div className='pr-8'>
-          <div className='pt-10'>
-            <h1 className='text-blue-300 text-lg md:text-xl'>Send me a message</h1>
+        <div className='pr-0'>
+          <div className='pt-10 flex justify-start items-center'>
+            <h1 className='text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-1'>Send me a message</h1>
+            <ChevronDownSquare color="white" size={20}/>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}
             className='flex space-y-4 h-full flex-col justify-center items-center pt-7'
@@ -58,7 +60,7 @@ const Contact = () => {
               {...register("name")}
               type="name"
               placeholder='name'
-              className='px-4 py-3 rounded w-full bg-gray-300'
+              className='px-4 py-3 rounded sm:w-96 bg-gray-300 w-full'
             />
             {errors.name && (
               <p className='text-red-500'>{errors.name.message}</p>
@@ -68,7 +70,7 @@ const Contact = () => {
               {...register("email")}
               type="email"
               placeholder='email'
-              className='px-4 py-3 rounded w-full bg-gray-300'
+              className='px-4 py-3 rounded sm:w-96 bg-gray-300 w-full'
             />
             {errors.email && (
               <p className='text-red-500'>{errors.email.message}</p>
@@ -77,7 +79,7 @@ const Contact = () => {
             <textarea 
               {...register("message")}
               placeholder='Enter message here'
-              className='px-4 py-2 rounded h-60 w-full bg-gray-300'
+              className='px-4 py-2 rounded h-60 sm:w-96 bg-gray-300 w-full'
             />
             {errors.message && (
               <p className='text-red-500'>{errors.message.message}</p>
