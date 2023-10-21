@@ -27,7 +27,7 @@ const Button:React.FC<componentProps> = ({link, text}) => {
                 <div className='pl-0 pt-0'>
                 <Lottie 
                   animationData={animationData}
-                  className='h-16 w-12'
+                  className='h-16 w-10'
                  />
                </div>
             </div>
