@@ -55,7 +55,7 @@ const Contact = () => {
             <h1 className='text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-'>Send me a message</h1>
               <Lottie 
                   animationData={animationData}
-                  className='h-10 w-10'
+                  className='h-14 w-14'
                />
           </div>
           <form onSubmit={handleSubmit(onSubmit)}
@@ -93,16 +93,16 @@ const Contact = () => {
             <button 
               disabled={disabled}
               type="submit"
-              className='bg-blue-700 disabled:bg-gray-500 py-2 px-4 rounded'
+              className='bg-blue-700 disabled:bg-gray-500 py-2 px-5 rounded'
               >
                <p className='text-gray-300'>Submit</p>
             </button>
               <div>
              <div>
               <div className='flex pt-3'>
-                <p className='text-gray-300'>send an email instead</p>
+                <p className='text-gray-400 text-lg'>send an email instead</p>
                 <Link href="mailto:reinhardtlagat@gmail.com">
-                  <p className='text-blue-500 pl-2 hover:text-gray-400'>email</p>
+                  <p className='text-blue-500 pl-2 hover:text-gray-400 text-lg'>email</p>
                 </Link>
               </div>
              </div>

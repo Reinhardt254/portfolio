@@ -22,12 +22,12 @@ const Button:React.FC<componentProps> = ({link, text}) => {
              >
              <div className='flex items-center justify-center'>
                <div>
-                 <h1 className='text-lg font-semibol text-blue-500'>{text}</h1>
+                 <h1 className='text-xl font-semibol text-blue-500'>{text}</h1>
                 </div>
-                <div className='pl-1 pt-1'>
+                <div className='pl-0 pt-0'>
                 <Lottie 
                   animationData={animationData}
-                  className='h-16 w-10'
+                  className='h-16 w-12'
                  />
                </div>
             </div>
