@@ -35,13 +35,14 @@ const Projects = () => {
              
            />        
           <p className='pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0'>
-             A quotes web app that implements CRUD functionalities. With a REST api built by NextJS server side and front end built with Tailwind. The web app allows users to read quotes, create their own accounts and write, delete or update quotes. The authentication was implemented using Next Auth.
+             A quotes web app that implements CRUD functionalities. It has a REST api built by NextJS  and the front end is built with NextJs and Tailwind. The web app allows users to read quotes, create their own accounts, delete or update. The authentication was implemented using Next Auth.
           </p>
         </div>
         <div className='w-full'>
           <div className='pb-2 mt-0 '>
             <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-sm  rounded-b-lg pb-3 px-3'>
-              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3 shadow-2xl shadow-blue-600'>Nextjs</p>
+              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3 shadow-2xl shadow-blue-600'>NextJS</p>
+              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3 shadow-2xl shadow-blue-600'>Javascript</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Tailwind</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>MongoDB</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Mongoose</p>
@@ -72,13 +73,14 @@ const Projects = () => {
             className='rounded-t-md'
           />     
           <p className='pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0'>
-            An Admin dashboard web application for an ecommerce store that implements all admin related tasks with a chart to manage statistics. The dashboard is built with NextJS and Prisma with a MySQL database i.e planet scale. The dashboard allows the admin to create a store or stores and they can add products with their attributes. The dashboard takes it futher by implementing apis for a creation of a client store.
+            An Admin dashboard application for an ecommerce store that implements all admin related tasks complete with a chart to show statistics. The dashboard is built with NextJS and Prisma with a MySQL database. The dashboard allows the admin to create a store or stores and they can add products with their attributes. The dashboard takes it futher by implementing apis for a creation of a client store.
           </p>
         </div>
         <div>
           <div className='pb-2'>
             <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl  rounded-b-lg pb-3 px-3'>
-              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Nextjs</p>
+              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>NextJS</p>
+              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>TypeScript</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Tailwind</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>Prisma</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300 mt-3'>MySQL</p>
@@ -117,7 +119,7 @@ const Projects = () => {
         <div>
           <div className='pb-2 mt-3'>
             <div className='flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl  rounded-b-lg pb-3 px-3'>
-              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>Nextjs</p>
+              <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>NextJS</p>
               <p className='bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300'>Tailwind</p>
             </div>
             </div>9

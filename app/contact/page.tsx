@@ -55,7 +55,7 @@ const Contact = () => {
             <h1 className='text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-'>Send me a message</h1>
               <Lottie 
                   animationData={animationData}
-                  className='h-12 w-14'
+                  className='h-12 w-12'
                />
           </div>
           <form onSubmit={handleSubmit(onSubmit)}

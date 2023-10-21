@@ -10,12 +10,12 @@ const Stack = () => {
 
   return (
     <div className="w-screen bg-slate-950 h-full flex justify-center items-center py-6">
-      <div className="md:w-1/2 px-6">
+      <div className="md:w-1/2 px-4">
         <div className="pt-0">
           <div>
             <h1 className="text-blue-300 text-2xl">Front end</h1>
             <p className="text-gray-400 pl-0">
-              In front-end , I have expertise in crafting dynamic and user-friendly web applications using an array of cutting-edge technologies. I specialize in React and Next.js to create responsive and efficient interfaces, ensuring a seamless user experience. Tailwind CSS and Material-UI are my go-to tools for crafting visually stunning designs, while Shadcn UI adds a touch of elegance to my projects. My attention to detail and commitment to accessibility and responsiveness make me adept at creating delightful web experiences.
+              In front-end , I have expertise in crafting dynamic and user-friendly web applications using an array of cutting-edge technologies. I specialize in React and NextJS to create responsive and efficient interfaces, ensuring a seamless user experience. Tailwind CSS and Material-UI are my go-to tools for crafting visually stunning designs, while Shadcn UI adds a touch of elegance to my projects. My attention to detail and commitment to accessibility and responsiveness make me adept at creating delightful web experiences.
             </p>
           </div>
           <div className="pt-6">
