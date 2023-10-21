@@ -12,7 +12,9 @@
   "dependencies": {
     "@clerk/nextjs": "^4.25.5",
     "@hookform/resolvers": "^3.3.2",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@prisma/client": "^5.4.2",
+    "@react-spring/web": "^9.7.3",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -21,6 +23,7 @@
     "clsx": "^2.0.0",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "lottie-react": "^2.4.0",
     "lucide-react": "^0.287.0",
     "mongodb": "^6.1.0",
     "next": "^13.5.6",

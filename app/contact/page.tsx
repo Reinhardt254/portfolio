@@ -9,6 +9,8 @@ import { z } from 'zod';
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"
 import { ChevronDownSquare } from 'lucide-react';
+import Lottie from "lottie-react"
+import animationData from "@/public/lottie/arrowdown.json";
 
 const messageSchema = z.object({
   name: z.string().min(3, "name should be at least three characters"),
@@ -50,8 +52,11 @@ const Contact = () => {
         <Toaster />
         <div className='pr-0'>
           <div className='pt-10 flex justify-start items-center'>
-            <h1 className='text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-1'>Send me a message</h1>
-            <ChevronDownSquare color="white" size={20}/>
+            <h1 className='text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-'>Send me a message</h1>
+              <Lottie 
+                  animationData={animationData}
+                  className='h-10 w-10'
+               />
           </div>
           <form onSubmit={handleSubmit(onSubmit)}
             className='flex space-y-4 h-full flex-col justify-center items-center pt-7'

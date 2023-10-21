@@ -1,5 +1,9 @@
+"use client"
+
 import Link from 'next/link'
-import { ArrowRight, ArrowRightToLine } from 'lucide-react'
+import { ArrowRight} from 'lucide-react'
+import Lottie from "lottie-react"
+import animationData from "@/public/lottie/arrowright.json";
 
 interface componentProps{
   link: string;
@@ -18,13 +22,13 @@ const Button:React.FC<componentProps> = ({link, text}) => {
              >
              <div className='flex items-center justify-center'>
                <div>
-                 <h1 className='text-lg font-semibol text-blue-300'>{text}</h1>
+                 <h1 className='text-lg font-semibol text-blue-500'>{text}</h1>
                 </div>
                 <div className='pl-1 pt-1'>
-                  <ArrowRight 
-                     size={24}
-                     color="#93c5fd"
-                  />
+                <Lottie 
+                  animationData={animationData}
+                  className='h-16 w-10'
+                 />
                </div>
             </div>
             </Link>
