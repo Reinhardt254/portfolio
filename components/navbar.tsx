@@ -70,7 +70,7 @@ const Navbar = () => {
            <div key={route.label}> 
             <Link
             href={route.href}
-            className={cn(route.active? "text-gray-200" : "text-blue-300")}
+            className={cn(route.active? "text-blue-100" : "text-blue-300")}
              >
              <p className="hover:text-white">{route.label}</p>
              </Link>
@@ -128,7 +128,10 @@ const Navbar = () => {
        {toggleDropDown && (
        <div className='z-50 h-screen w-screen absolute inset-0'>
           <div className='h-full w-full flex'>
-            <div className='w-1/3 bg-black opacity-70'>
+            <div 
+               className='w-1/3 bg-black opacity-70'
+               onClick={()=>setToggleDropDown(false)}
+              >
             </div>
             <div className='bg-slate-950 w-2/3'>
               <div 
@@ -148,7 +151,7 @@ const Navbar = () => {
                     <Link
                       href={route.href}
                       onClick={()=>setToggleDropDown(false)}
-                      className={cn(route.active? "text-gray-300" : "text-blue-300")}
+                      className={cn(route.active? "text-blue-100" : "text-blue-300")}
                     >
                       <p className="text-xl">{route.label}</p>
                     </Link>

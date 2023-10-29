@@ -10,12 +10,12 @@ import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"
 import { ChevronDownSquare } from 'lucide-react';
 import Lottie from "lottie-react"
-import animationData from "@/public/lottie/arrowdown.json";
+import animationData from "@/public/lottie/message.json";
 
 const messageSchema = z.object({
   name: z.string().min(3, "name should be at least three characters"),
   email: z.string().email(),
-  message: z.string().min(1, "cannot be empty"),
+  message: z.string().min(1, "please enter a message, it cannot be empty"),
 })
 
 type TmessageSchema = z.infer<typeof messageSchema>
@@ -55,7 +55,7 @@ const Contact = () => {
             <h1 className='text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-'>Send me a message</h1>
               <Lottie 
                   animationData={animationData}
-                  className='h-12 w-12'
+                  className='h-12 w-12 pl-2'
                />
           </div>
           <form onSubmit={handleSubmit(onSubmit)}
