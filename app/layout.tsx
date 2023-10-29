@@ -3,15 +3,11 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-// export const metadata: Metadata = {
-//   title: 'ReinhardtDev',
-//   description: 'My profile',
-// }
-
-export const metadata = {
+export const metadata: Metadata = {
   title: 'ReinhardtDev',
   description: 'Portfolio',
   icons:{
@@ -38,8 +34,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
              <Navbar />
             </div>
           </div>
-        {children}
+            {children}
         </div>
+        <Analytics />
      </body>
     </html>
     </ClerkProvider>
