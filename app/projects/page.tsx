@@ -6,13 +6,13 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='px-2 w-screen bg-slate-950 border-white h-full flex items-center justify-center'>
+    <div className='px- w-screen bg-slate-950 border-white h-full flex items-center justify-center'>
       <div className='md:w-3/4 pr-4 md:pr-16'>
            <div className='pt-'>
             <h1 className='text-center font-semibold text-gray-300 text-3xl pt-8 pb-0'>My recent work</h1>
           </div>
         <div className='space-y-4  pt-10 w-full'>
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4 mx-2 md:mx-0'>
            <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://quoteme-reinhardt254.vercel.app">
@@ -51,7 +51,8 @@ const Projects = () => {
             </div> 
             </div>
         </div>
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
+
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4 mx-2 md:mx-0'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://e-commerce-saas-admin-cj41d9r8c-reinhardt254.vercel.app">
@@ -91,7 +92,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4 mx-2 md:mx-0'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://helpingheartsfoundation.vercel.app">
@@ -126,7 +127,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4 mx-2 md:mx-0'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://g-p-3.vercel.app">
