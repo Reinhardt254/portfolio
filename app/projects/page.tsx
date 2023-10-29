@@ -162,7 +162,7 @@ const Projects = () => {
             </div> 
             </div>
           </div>
-            <div className='pb-10 pt-5'>
+            <div className='pb-10 pt-5 pl-2'>
              <Button 
              link="/contact"
              text="Convinced, hire me"
