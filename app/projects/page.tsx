@@ -162,10 +162,10 @@ const Projects = () => {
             </div> 
             </div>
           </div>
-            <div className='pb-10 pt-5 pl-2'>
+            <div className='pb-10 pt-5'>
              <Button 
              link="/contact"
-             text="Convinced? Hire me"
+             text="Convinced, hire me"
             />
            </div>
          </div>
