@@ -7,11 +7,11 @@ import { useEffect, useState } from "react"
 const Errormessage = () => {
    const [timer, setTimer] = useState(false)
 
-   useEffect(()=>{
-      setTimeout(()=>{
-        setTimer(true)
-      }, 3500)
-   }, [])
+   // useEffect(()=>{
+   //    setTimeout(()=>{
+   //      setTimer(true)
+   //    }, 3500)
+   // }, [])
 
    if(timer){
       return(
@@ -22,7 +22,7 @@ const Errormessage = () => {
   return (
     <div className='min-h-screen w-screen'>
       <div className='h-full justify-center items-center flex'>
-         <div className='h-64 flex justify-center items-center bg-slate-900 rounded flex-col mt-32 shadow-blue-200 shadow-sm'>
+         <div className='h-64 flex justify-center items-center bg-slate-900 rounded flex-col mt-32 shadow-blue-200 shadow-sm w-11/12 md:w-auto'>
             <div className="justify-center items-center flex flex-col px-12 md:px-20">
                <p className='text-blue-400 text-3xl font-bold'>Ooooops!</p>
                <p className='text-gray-300 pt-5 text-lg'>Only Admins can access this page</p>
