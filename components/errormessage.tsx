@@ -7,11 +7,11 @@ import { useEffect, useState } from "react"
 const Errormessage = () => {
    const [timer, setTimer] = useState(false)
 
-   // useEffect(()=>{
-   //    setTimeout(()=>{
-   //      setTimer(true)
-   //    }, 3500)
-   // }, [])
+   useEffect(()=>{
+      setTimeout(()=>{
+        setTimer(true)
+      }, 3500)
+   }, [])
 
    if(timer){
       return(
