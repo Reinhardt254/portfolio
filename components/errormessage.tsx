@@ -10,7 +10,7 @@ const Errormessage = () => {
    useEffect(()=>{
       setTimeout(()=>{
         setTimer(true)
-      }, 3000)
+      }, 3500)
    }, [])
 
    if(timer){

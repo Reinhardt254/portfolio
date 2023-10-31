@@ -7,12 +7,12 @@ import React from 'react'
 const Projects = () => {
   return (
     <div className='px- w-screen bg-slate-950  h-full flex items-center justify-center'>
-      <div className='md:w-3/4 w-screen'>
+      <div className=' w-screen'>
            <div className=''>
             <h1 className='text-center font-semibold text-gray-300 text-3xl pt-8 pb-0'>My recent work</h1>
           </div>
         <div className='space-y-4  pt-10 w-screen flex flex-col justify-center items-center h-full'>
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12 sm:w-full'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12 sm:w-2/3'>
            <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://quoteme-reinhardt254.vercel.app">
@@ -34,7 +34,7 @@ const Projects = () => {
              className='rounded-t-md'
              
            />        
-          <p className='pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0'>
+          <p className='pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0 w-full'>
              A quotes web app that implements CRUD functionalities. It has a REST api built by NextJS  and the front end is built with NextJs and Tailwind. The web app allows users to read quotes, create their own accounts, delete or update. The authentication was implemented using Next Auth.
           </p>
         </div>
@@ -52,7 +52,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12 md:w-full'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://e-commerce-saas-admin-cj41d9r8c-reinhardt254.vercel.app">
@@ -92,7 +92,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12 md:w-full'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://helpingheartsfoundation.vercel.app">
@@ -127,7 +127,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12 md:w-full'>
+        <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
               <Link href="https://g-p-3.vercel.app">

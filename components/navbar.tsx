@@ -59,7 +59,7 @@ const Navbar = () => {
         alt="profile"
         width={40}
         height={40}
-        className='rounded-full shadow-sm shadow-blue-300'
+        className='rounded-full shadow-2xl shadow-blue-300'
        />
        </Link>
       </div>
