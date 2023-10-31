@@ -17,7 +17,9 @@ export default function DasboardLayout({children}: {children: React.ReactNode}) 
    
 
    if(uuid !== id){
-      redirect("/")
+      return(
+         <Errormessage />
+      )
    }
 
    return (
