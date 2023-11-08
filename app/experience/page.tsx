@@ -22,7 +22,7 @@ const Experience = () => {
           </div>
           <p className='text-blue-300 text-xs pt-1'>Sept 2023 - oct 2023</p>
           <p className='text-gray-400 pt-2'>
-            I worked as a lead software engineer in designing and building a online research system. We used rescent technoligies which included NextJS, Prisma, MySQL database, Tailwind and much more.
+            I worked as a lead software engineer in designing and building an online research system. We used recent technoligies which included NextJS, Prisma, MySQL database, Tailwind and much more.
           </p>
         </div>
         <div>
