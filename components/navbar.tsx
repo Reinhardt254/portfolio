@@ -114,6 +114,17 @@ const Navbar = () => {
             />
           </Link>
         </div>
+        <div className='text-gray-200'>
+          <Link href="https://instagram.com/reinhardt_dev?igshid=OGQ5ZDc2ODk2ZA==">
+            <Image 
+            src="/socials/insta.png"
+            alt="profile"
+            width={20}
+            height={20}
+            className='rounded'
+            />
+          </Link>
+        </div>
         <div className='pl-5 max-sm:hidden'>
           <UserButton afterSignOutUrl="/"/>
         </div>
