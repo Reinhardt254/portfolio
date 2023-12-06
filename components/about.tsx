@@ -13,7 +13,7 @@ const About = () => {
             I build things for the web
          </p>
          <p className="md:text-2xl font-semibold text-gray-400 md:pt-7 md:w-3/4 pt-3 text-lg">
-            I am a fullstack software engineer, I have specialised on building fully functional web applications following the best practises. I am conversant with the latest technologies making me not only a versatile developer but also a modern developer with the tools desired for the daily evolving technological and user changes.
+            I am a fullstack software engineer, I have specialised on building fully functional web applications following the best practices. I am conversant with the latest technologies making me not only a versatile developer but also a modern developer with the tools desired for the daily evolving technological and user changes.
          </p>
          
          <div className="pt-8">
