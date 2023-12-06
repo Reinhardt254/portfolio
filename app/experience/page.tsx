@@ -46,7 +46,7 @@ const Experience = () => {
           </div>
           <p className='text-blue-300 text-xs pt-1'>April 2022-Aug 2022</p>
           <p className='text-gray-400 pt-2'>
-           I worked with a team to maintain and improve the student management system at the school. We delved into not only coding but also brainstoming and finding solutions for various problems we had to solve in maintaining the system. We also delved into integrating finger print management system in the school. We used array of tools and technologies including Javascript, Css and HTML, Bootstrap.
+           I worked with a team to maintain and improve the student management system at the school. We delved into not only coding but also brainstorming and finding solutions for various problems we had to solve in maintaining the system. We also delved into integrating finger print management system in the school. We used array of tools and technologies including Javascript, Css and HTML, Bootstrap.
           </p>
         </div>
         <div>
