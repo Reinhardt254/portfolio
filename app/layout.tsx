@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     apple:"/logo/logo.png"
   },
   keywords:[
+    "kipchirchir",
+    "Reinhardt Kipchirchir",
+    "Reinhardt",
+    "Reinhardt Lagat",
+    "Lagat",
     "software engineer",
     "web developer",
     "portfolio",
