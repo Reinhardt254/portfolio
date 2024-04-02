@@ -15,6 +15,18 @@ const Experience = () => {
         </div>
         <div>
           <div className='flex justify-start items-center flex-wrap'>
+             <p className='text-blue-200 font-semibold md::text-xl pr-2 text-lg'>Software Developer</p>
+             <p className='text-blue-300 '>
+               Panda Flowers, Naivasha-Kenya
+             </p>
+          </div>
+          <p className='text-blue-300 text-xs pt-1'>March 2024 - Present</p>
+          <p className='text-gray-400 pt-2'>
+            As a software developer at Panda, I am responsible for designing, developing, and maintaining scalable software solutions. The tools I use includes, Javascript, css with html and php.
+          </p>
+        </div>
+        <div>
+          <div className='flex justify-start items-center flex-wrap'>
              <p className='text-blue-200 font-semibold md::text-xl pr-2 text-lg'>Lead Software Engineer</p>
              <p className='text-blue-300 '>
                Clinical research studies & trials USA remote
