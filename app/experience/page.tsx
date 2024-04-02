@@ -3,7 +3,6 @@ import Button from '@/components/button'
 const Experience = () => {
   return (
     <div>
-
     <div className='h-full bg-slate-950 w-screen flex justify-center items-center py-3 pb-20 pr-4'>
       <div className='md:w-2/5 flex flex-col  mx-4 space-y-5 pl-0'>
         <div className='pt-2'>

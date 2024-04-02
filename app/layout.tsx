@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'ReinhardtDev',
-  description: 'Portfolio',
+  description: 'Software Engineer',
   icons:{
     icon: "/logo/logo.png",
     apple:"/logo/logo.png"
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "Reinhardt Kipchirchir",
     "Reinhardt",
     "Reinhardt Lagat",
+    "Reinhardt kipchirchir lagat",
     "Lagat",
     "software engineer",
     "web developer",
