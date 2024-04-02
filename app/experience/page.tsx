@@ -22,7 +22,7 @@ const Experience = () => {
           </div>
           <p className='text-blue-300 text-xs pt-1'>March 2024 - Present</p>
           <p className='text-gray-400 pt-2'>
-            As a software developer at Panda, I am responsible for designing, developing, and maintaining scalable software solutions. The tools I use includes, Javascript, css with html and php.
+            As a software developer at Panda, I am responsible for designing, developing, and maintaining scalable software solutions. Working closely with cross-functional teams, I contribute to the full software development lifecycle, from requirements gathering to deployment and ongoing support. The tools I use includes, Javascript, css with html and php.
           </p>
         </div>
         <div>
