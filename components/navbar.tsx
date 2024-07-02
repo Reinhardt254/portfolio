@@ -82,7 +82,7 @@ const Navbar = () => {
 
       <div className='flex  mr-7 space-x-4 font-bold text-lg flex-row justify-center items-center h-full'>
         <div className='text-gray-200'>
-          <Link href="https://www.linkedin.com/in/reinhardt-lagat-281634201">
+          <Link href="https://www.linkedin.com/in/reinhardtdev">
            <Image 
            src="/socials/linkdn.png"
            alt="profile"
