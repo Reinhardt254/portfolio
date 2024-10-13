@@ -1,6 +1,5 @@
 
 import prismadb from '@/lib/prismadb'
-import { UserButton, auth } from '@clerk/nextjs'
 import axios from 'axios'
 import Image from 'next/image'
 import { Trash } from 'lucide-react'
