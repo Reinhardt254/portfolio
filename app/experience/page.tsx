@@ -28,10 +28,10 @@ const Experience = () => {
           <div className='flex justify-start items-center flex-wrap'>
              <p className='text-blue-200 font-semibold md::text-xl pr-2 text-lg'>Lead Software Engineer</p>
              <p className='text-blue-300 '>
-               Clinical research studies & trials USA remote
+               Paid Studies remote
              </p>
           </div>
-          <p className='text-blue-300 text-xs pt-1'>Sept 2023 - oct 2023</p>
+          <p className='text-blue-300 text-xs pt-1'>Sept 2023 - Dec 2023</p>
           <p className='text-gray-400 pt-2'>
             I worked as a lead software engineer in designing and building an online research system. We used recent technoligies which included NextJS, Prisma, MySQL database, Tailwind and much more.
           </p>
