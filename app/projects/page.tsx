@@ -55,7 +55,7 @@ const Projects = () => {
         <div className='md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3'>
         <div className='justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2'>
              <div className=''>
-              <Link href="https://e-commerce-saas-admin-cj41d9r8c-reinhardt254.vercel.app">
+              <Link href="https://e-commerce-saas-admin.vercel.app/">
                 <ExternalLink size={24} color="white" fill="white" className=''/>
               </Link>
              </div>
