@@ -5,6 +5,6 @@ export default function robots() {
        allow: '/',
        disallow: '/dashboard', 
      },
-     sitemap: 'https://paidonlinestudies.com/sitemap.xml',
+     sitemap: 'https://reinhardtdev.com/sitemap.xml',
    }
  }
