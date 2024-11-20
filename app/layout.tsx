@@ -8,8 +8,8 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ReinhardtDev',
-  description: 'Software Engineer',
+  title: 'Reinhardt Lagat | Software engineer',
+  description: 'An experinced Software Engineer, Software developer, web developer based in Nairobi Kenya',
   icons:{
     icon: "/logo/logo.png",
     apple:"/logo/logo.png"
@@ -26,7 +26,10 @@ export const metadata: Metadata = {
     "portfolio",
     "fullstack developer",
     "software developer"
-   ]
+   ],
+   alternates: {
+    canonical: "https://reinhardtdev.com",
+  },
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
