@@ -1,31 +1,31 @@
 export default function sitemap() {
    return [
      {
-       url: 'https://www.reinhardtdev.com/',
+       url: 'https://reinhardtdev.com/',
        lastModified: new Date(),
        changeFrequency: 'yearly',
        priority: 1,
      },
      {
-       url: 'https://www.reinhardtdev.com/skills',
+       url: 'https://reinhardtdev.com/skills',
        lastModified: new Date(),
        changeFrequency: 'monthly',
        priority: 0.8,
      },
      {
-       url: 'https://www.reinhardtdev.com/projects',
+       url: 'https://reinhardtdev.com/projects',
        lastModified: new Date(),
        changeFrequency: 'weekly',
        priority: 0.5,
      },
      {
-      url: 'htthttps://www.reinhardtdev.com/experience',
+      url: 'htthttps://reinhardtdev.com/experience',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
     },
     {
-      url: 'https://www.reinhardtdev.com/contact',
+      url: 'https://reinhardtdev.com/contact',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
