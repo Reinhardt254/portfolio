@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "software developer"
    ],
    alternates: {
-    canonical: "https://www.reinhardtdev.com/",
+    canonical: "https://reinhardtdev.com/",
   },
 }
 
