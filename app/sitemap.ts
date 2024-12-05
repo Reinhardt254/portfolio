@@ -19,7 +19,7 @@ export default function sitemap() {
        priority: 0.5,
      },
      {
-      url: 'htthttps://reinhardtdev.com/experience',
+      url: 'https://reinhardtdev.com/experience',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
