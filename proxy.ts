@@ -9,9 +9,12 @@ export async function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Check for Better Auth session cookie (try different possible names)
+  // Check for Better Auth session cookie
+  // In production (HTTPS), cookies get __Secure- prefix automatically
+  // In development (HTTP), cookies don't have the prefix
   const sessionToken =
-    request.cookies.get("better-auth.session_token")?.value ||
+    request.cookies.get("__Secure-better-auth.session_token")?.value || // Production (HTTPS)
+    request.cookies.get("better-auth.session_token")?.value || // Development (HTTP)
     request.cookies.get("better_auth_session")?.value ||
     request.cookies.get("session_token")?.value ||
     request.cookies.get("auth_session")?.value;
@@ -20,11 +23,6 @@ export async function proxy(request: NextRequest) {
   // Full session validation happens in dashboard layout (Node.js runtime)
   if (pathname.startsWith("/dashboard")) {
     if (!sessionToken) {
-      console.log("No session token found, redirecting to sign-in");
-      console.log(
-        "Available cookies:",
-        request.cookies.getAll().map((c) => c.name)
-      );
       return NextResponse.redirect(new URL("/sign-in", request.url));
     }
   }
