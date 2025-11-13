@@ -1,34 +1,39 @@
-export default function sitemap() {
-   return [
-     {
-       url: 'https://reinhardtdev.com/',
-       lastModified: new Date(),
-       changeFrequency: 'yearly',
-       priority: 1,
-     },
-     {
-       url: 'https://reinhardtdev.com/skills',
-       lastModified: new Date(),
-       changeFrequency: 'monthly',
-       priority: 0.8,
-     },
-     {
-       url: 'https://reinhardtdev.com/projects',
-       lastModified: new Date(),
-       changeFrequency: 'weekly',
-       priority: 0.5,
-     },
-     {
-      url: 'https://reinhardtdev.com/experience',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
+import { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://reinhardtdev.com";
+  const currentDate = new Date();
+
+  return [
+    {
+      url: baseUrl,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 1,
     },
     {
-      url: 'https://reinhardtdev.com/contact',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
+      url: `${baseUrl}/skills`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
-   ]
- }
+    {
+      url: `${baseUrl}/experience`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/projects`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
+}

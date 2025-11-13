@@ -16,3 +16,64 @@ model message {
 
   createdAt     DateTime  @default(now()) @map(name: "created_at")
 }
+
+model user {
+  id            String    @id @map("_id")
+  name          String?
+  email         String    @unique
+  emailVerified Boolean   @default(false) @map("email_verified")
+  image         String?
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  
+  accounts account[]
+  sessions session[]
+}
+
+model account {
+  id                String  @id @map("_id")
+  userId            String  @map("user_id")
+  accountId         String  @map("account_id")
+  providerId        String  @map("provider_id")
+  accessToken       String? @map("access_token")
+  refreshToken      String? @map("refresh_token")
+  idToken           String? @map("id_token")
+  accessTokenExpiresAt DateTime? @map("access_token_expires_at")
+  refreshTokenExpiresAt DateTime? @map("refresh_token_expires_at")
+  scope             String?
+  password          String?
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+  
+  user user @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@unique([providerId, accountId])
+  @@map("account")
+}
+
+model session {
+  id        String   @id @map("_id")
+  userId    String   @map("user_id")
+  expiresAt DateTime @map("expires_at")
+  token     String   @unique
+  ipAddress String?  @map("ip_address")
+  userAgent String?  @map("user_agent")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  
+  user user @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("session")
+}
+
+model verification {
+  id         String   @id @map("_id")
+  identifier String
+  value      String
+  expiresAt  DateTime @map("expires_at")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+  
+  @@unique([identifier, value])
+  @@map("verification")
+}

@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,3 +6,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body {
+  overflow-x: hidden;
+}

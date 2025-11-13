@@ -1,30 +1,26 @@
-import Errormessage from "@/components/errormessage"
-import { auth } from '@clerk/nextjs/server'
-import { redirect } from "next/navigation"
-import  { Toaster } from "react-hot-toast"
+import Errormessage from "@/components/errormessage";
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+import { Toaster } from "react-hot-toast";
+import { headers } from "next/headers";
 
-export default function DasboardLayout({children}: {children: React.ReactNode}) {
+export default async function DasboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const session = await auth.api.getSession({ headers: await headers() });
 
-   const id = "user_2WtseCCgLWrnQqdf48qE28t5VHD"
+  if (!session) {
+    redirect("/sign-in");
+  }
 
-   const { userId } = auth()
+  // Check if user is the admin by email
+  const adminEmail = "reinhardtlagat@gmail.com"; // Replace with your admin email
 
-   if(!userId){
-      redirect("/sign-in")
-   }
+  if (session.user.email !== adminEmail) {
+    redirect("/");
+  }
 
-   const uuid = userId.toString()
-   
-
-   if(uuid !== id){
-      return(
-         <Errormessage />
-      )
-   }
-
-   return (
-      <>
-        {children}
-      </>
-   )
- }
+  return <>{children}</>;
+}
