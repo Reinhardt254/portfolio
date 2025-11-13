@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Let Better Auth API routes pass through (handled by route handler)
@@ -9,21 +9,31 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Check for Better Auth session cookie
-  const sessionToken = request.cookies.get("better-auth.session_token")?.value;
+  // Check for Better Auth session cookie (try different possible names)
+  const sessionToken =
+    request.cookies.get("better-auth.session_token")?.value ||
+    request.cookies.get("better_auth_session")?.value ||
+    request.cookies.get("session_token")?.value ||
+    request.cookies.get("auth_session")?.value;
 
   // Protect dashboard routes - check for session cookie
   // Full session validation happens in dashboard layout (Node.js runtime)
   if (pathname.startsWith("/dashboard")) {
     if (!sessionToken) {
+      console.log("No session token found, redirecting to sign-in");
+      console.log(
+        "Available cookies:",
+        request.cookies.getAll().map((c) => c.name)
+      );
       return NextResponse.redirect(new URL("/sign-in", request.url));
     }
   }
 
-  // Redirect authenticated users away from auth pages
+  // Redirect authenticated users away from auth pages to home
+  // Role-based redirect (admin to dashboard) is handled in the auth pages after sign-in
   if (pathname.startsWith("/sign-in") || pathname.startsWith("/sign-up")) {
     if (sessionToken) {
-      return NextResponse.redirect(new URL("/dashboard", request.url));
+      return NextResponse.redirect(new URL("/", request.url));
     }
   }
 

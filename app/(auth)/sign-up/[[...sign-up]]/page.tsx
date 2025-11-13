@@ -27,11 +27,21 @@ export default function SignUpPage() {
 
       if (error) {
         toast.error(error.message || "Failed to sign up");
+        setLoading(false);
         return;
       }
 
       toast.success("Successfully signed up!");
-      router.push("/dashboard");
+
+      // Check if user is admin and redirect accordingly
+      const adminEmail = "reinhardtlagat@gmail.com";
+      const userEmail = data?.user?.email || email;
+
+      if (userEmail === adminEmail) {
+        router.push("/dashboard");
+      } else {
+        router.push("/");
+      }
       router.refresh();
     } catch (error) {
       toast.error("An error occurred");
