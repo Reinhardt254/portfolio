@@ -112,9 +112,9 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="pt-10">
+        {/* <div className="pt-10">
           <Button text="Go back home" link="/" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

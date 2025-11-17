@@ -69,7 +69,7 @@ export default function BlogList({ blogs }: BlogListProps) {
 
   return (
     <div className="bg-slate-950 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 py-12 max-sm:px-4 max-sm:py-7">
         {/* Search */}
         <div className="mb-7">
           <Input
@@ -128,7 +128,7 @@ export default function BlogList({ blogs }: BlogListProps) {
                   )}
 
                   {/* Read more link */}
-                  <div className="text-white group-hover:text-blue-400 transition-colors inline-flex items-center gap-1">
+                  <div className="text-blue-400 group-hover:text-blue-300 transition-colors inline-flex items-center gap-1">
                     Read more <ArrowRight className="w-4 h-4" />
                   </div>
                 </article>

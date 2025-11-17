@@ -53,8 +53,6 @@ main.projects-page {
 }
 
 
-
-
 @media (max-width: 768px) {
   .links {
     display: none;
@@ -103,6 +101,12 @@ main.projects-page {
     margin: 0 auto;
     max-width: 1000px;
     height: 100%;
+  }
+
+  main.projects-page {
+    max-width: 1000px;
+    width: 92%;
+    box-sizing: border-box;
   }
 }
 

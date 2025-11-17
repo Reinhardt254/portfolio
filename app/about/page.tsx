@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <main className="bg-slate-950 min-h-screen py-12 pt-2">
-      <div className="max-w-4xl mx-auto px-4 space-y-0">
+      <div className="max-w-4xl mx-auto px-0 space-y-0 max-sm:px-2">
         <section className=" border p-0 shadow-lg py-8">
           <p className="text-xs uppercase tracking-[0.3em] text-blue-400 mb-3">
             Journal Entry :: Story
@@ -83,7 +83,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="border p-0 shadow-lg py-8">
+        <section className="border p-0 shadow-lg py-8 max-sm:py-0">
           <div className="flex flex-col gap-3 mb-6">
             <div className="flex flex-col items-start gap-1">
               <div>

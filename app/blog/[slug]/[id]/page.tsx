@@ -93,10 +93,10 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div className="bg-slate-950 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 py-12 max-sm:px-4 max-sm:py-7">
         {/* Back Button */}
         <Link href="/blog">
-          <button className="mb-8 text-white hover:text-blue-400 transition-colors inline-flex items-center gap-2">
+          <button className="mb-8 text-white hover:text-blue-400 transition-colors inline-flex items-center gap-2 max-sm:mb-4">
             <ArrowLeft className="w-4 h-4" />
             Back to Blog List
           </button>
@@ -105,8 +105,8 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Blog Post */}
         <article>
           {/* Header */}
-          <header className="mb-8 max-sm:mb-4">
-            <h1 className="mb-4 text-4xl font-bold text-blue-400 pb-2 border-b-2 border-dotted border-blue-400">
+          <header className="mb-4 max-sm:mb-4">
+            <h1 className="mb-4 text-4xl font-bold text-blue-200 pb-2 border-b-2 border-dotted border-blue-400">
               {post.title}
             </h1>
 
