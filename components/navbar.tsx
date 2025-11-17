@@ -51,9 +51,9 @@ const Navbar = () => {
       active: pathname === "/",
     },
     {
-      href: "/skills",
+      href: "/about",
       label: "About",
-      active: pathname === "/skills",
+      active: pathname === "/about",
     },
     {
       href: "/experience",
@@ -66,6 +66,11 @@ const Navbar = () => {
       active: pathname === "/projects",
     },
     {
+      href: "/blog",
+      label: "Blog",
+      active: pathname === "/blog" || pathname.startsWith("/blog/"),
+    },
+    {
       href: "/contact",
       label: "Contact",
       active: pathname === "/contact",
@@ -73,7 +78,7 @@ const Navbar = () => {
     {
       href: "/dashboard",
       label: "Dashboard",
-      active: pathname === "/dashboard",
+      active: pathname === "/dashboard" || pathname.startsWith("/dashboard/"),
       adminOnly: true, // Mark dashboard as admin-only
     },
   ];
@@ -87,8 +92,8 @@ const Navbar = () => {
   });
 
   return (
-    <div className="flex flex-row pt-5 pb-2  px-2 bg-slate-950 justify-between  items-center w-screen">
-      <div className="pl-3 flex space-x-0 font-bold flex-row  items-center justify-center">
+    <div className="flex flex-row pt-5 pb-2  px-2 bg-slate-950 justify-center  items-center w-screen relative max-sm:justify-between">
+      <div className="pl-3 flex space-x-0 font-bold flex-row  items-center justify-center logo">
         <Link href="/">
           <Image
             src="/logo/logo.png"
@@ -100,7 +105,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="max-sm:hidden">
+      <div className="max-sm:hidden links">
         <div className="flex space-x-3">
           {routes.map((route) => (
             <div key={route.label}>
@@ -115,8 +120,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex  mr-7 space-x-4 font-bold text-lg flex-row justify-center items-center h-full">
-        <div className="text-gray-200">
+      <div className="flex  mr-0 space-x-4 font-bold text-lg flex-row justify-center items-center h-full  socials-profile">
+        <div className="text-gray-200 socials-profile-item">
           <Link href="https://www.linkedin.com/in/reinhardtdev">
             <Image
               src="/socials/linkdn.png"
@@ -127,7 +132,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="text-gray-200">
+        <div className="text-gray-200 socials-profile-item">
           <Link href="https://github.com/Reinhardt254">
             <Image
               src="/socials/github.jpg"
@@ -138,7 +143,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="text-gray-200">
+        <div className="text-gray-200 socials-profile-item">
           <Link href="https://twitter.com/_chirchirkip">
             <Image
               src="/socials/x.png"
@@ -149,7 +154,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="text-gray-200">
+        <div className="text-gray-200 socials-profile-item">
           <Link href="https://instagram.com/reinhardt_dev?igshid=OGQ5ZDc2ODk2ZA==">
             <Image
               src="/socials/insta.png"
@@ -160,14 +165,14 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="pl-5 max-sm:hidden relative">
+        <div className="pl-2 max-sm:hidden relative md:mr-5 user-menu">
           {session?.user ? (
             <div className="relative cursor-pointer">
               <button
                 onClick={() => setUserMenuOpen(!userMenuOpen)}
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors"
+                className="flex items-center justify-center w-5 h-5 md:w-8 md:h-8 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors cursor-pointer hover:scale-105"
               >
-                <User size={20} color="white" />
+                <User size={16} color="white" />
               </button>
               {userMenuOpen && (
                 <>
@@ -206,7 +211,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="sm:hidden mr-8">
+      <div className="sm:hidden mr-8 menu-icon max-sm:mr-4">
         <div onClick={() => setToggleDropDown(true)}>
           <AlignCenter size={24} color="white" />
         </div>

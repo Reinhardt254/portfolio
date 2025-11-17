@@ -28,6 +28,7 @@ model user {
   
   accounts account[]
   sessions session[]
+  blogs    Blog[]
 }
 
 model account {
@@ -76,4 +77,59 @@ model verification {
   
   @@unique([identifier, value])
   @@map("verification")
+}
+
+model BlogCategory {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  blogs Blog[]
+  
+  @@map("blog_category")
+}
+
+model BlogTag {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  
+  blogs BlogPostTag[]
+  
+  @@map("blog_tag")
+}
+
+model Blog {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  content       String
+  excerpt       String?
+  slug          String    @unique
+  categoryId    String?   @map("category_id") @db.ObjectId
+  featuredImage String?   @map("featured_image")
+  authorId      String    @map("author_id")
+  status        String    @default("draft") // 'draft', 'published', 'archived'
+  publishedAt   DateTime? @map("published_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  
+  category BlogCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  author   user          @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  tags     BlogPostTag[]
+  
+  @@map("blog")
+}
+
+model BlogPostTag {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  blogId String @map("blog_id") @db.ObjectId
+  tagId  String @map("tag_id") @db.ObjectId
+  
+  blog Blog     @relation(fields: [blogId], references: [id], onDelete: Cascade)
+  tag  BlogTag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  
+  @@unique([blogId, tagId])
+  @@map("blog_post_tag")
 }

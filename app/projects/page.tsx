@@ -6,15 +6,32 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="px- w-screen bg-slate-950  h-full flex items-center justify-center">
-      <div className=" w-screen">
-        <div className="">
-          <h1 className="text-center font-semibold text-gray-300 text-3xl pt-8 pb-0">
+    <main className=" bg-slate-950 h-full flex justify-center items-center py-6 projects-page">
+      <div className=" w-full space-y-2">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-start font-semibold text-gray-300 text-3xl pt-8 pb-3  max-sm:pt-0">
             My recent work
           </h1>
+
+          <div
+            className="w-full opacity-70"
+            style={{
+              borderBottom: "4px dotted #3b82f6", // blue-500
+              borderImage:
+                "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
+            }}
+          />
+          <div
+            className="w-full opacity-70"
+            style={{
+              borderBottom: "4px dotted #3b82f6",
+              borderImage:
+                "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
+            }}
+          />
         </div>
-        <div className="space-y-4  pt-10 w-screen flex flex-col justify-center items-center h-full">
-          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12 sm:w-2/3">
+        <div className="space-y-4  pt-5 w-full flex flex-col justify-center items-center h-full">
+          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-full sm:w-full">
             <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2">
               <div className="">
                 <Link href="https://quoteme-reinhardt254.vercel.app">
@@ -32,15 +49,15 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex-col md:flex-row flex relative max-sm:justify-center max-sm:items-center">
+            <div className="flex-col md:flex-row flex relative max-sm:justify-center max-sm:items-center w-full">
               <Image
                 alt="project"
                 src="/projects/quotes.png"
                 width={400}
                 height={200}
-                className="rounded-t-md"
+                className="rounded-t-md w-full h-auto md:w-1/2 md:h-auto object-contain"
               />
-              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0 w-full">
+              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-1/2 px-0 md:px-0 w-full max-sm:pt-5">
                 A quotes web app that implements CRUD functionalities. It has a
                 REST api built by NextJS and the front end is built with NextJs
                 and Tailwind. The web app allows users to read quotes, create
@@ -74,7 +91,7 @@ const Projects = () => {
             </div>
           </section>
 
-          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3">
+          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-full  sm:w-full">
             <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2">
               <div className="">
                 <Link href="https://e-commerce-saas-admin.vercel.app/">
@@ -98,9 +115,9 @@ const Projects = () => {
                 src="/projects/admin.png"
                 width={400}
                 height={200}
-                className="rounded-t-md"
+                className="rounded-t-md w-full h-auto md:w-1/2 md:h-auto object-contain"
               />
-              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0">
+              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-1/2 px-0 md:px-0 max-sm:pt-5">
                 An Admin dashboard application for an ecommerce store that
                 implements all admin related tasks complete with a chart to show
                 statistics. The dashboard is built with NextJS and Prisma with a
@@ -142,7 +159,7 @@ const Projects = () => {
             </div>
           </section>
 
-          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3">
+          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-full  sm:w-full">
             <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2">
               <div className="">
                 <Link href="https://e-commerce-client-store.vercel.app/">
@@ -166,9 +183,9 @@ const Projects = () => {
                 src="/projects/client.png"
                 width={400}
                 height={200}
-                className="rounded-t-md"
+                className="rounded-t-md w-full h-auto md:w-1/2 md:h-auto object-contain"
               />
-              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0">
+              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-1/2 px-0 md:px-0 max-sm:pt-5">
                 A client-facing eCommerce store built with Next.js and Prisma,
                 backed by a MySQL database. The store provides a seamless
                 shopping experience, allowing customers to browse products with
@@ -202,54 +219,7 @@ const Projects = () => {
             </div>
           </section>
 
-          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3">
-            <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2">
-              <div className="">
-                <Link href="https://helpingheartsfoundation.vercel.app">
-                  <ExternalLink
-                    size={24}
-                    color="white"
-                    fill="white"
-                    className=""
-                  />
-                </Link>
-              </div>
-              <div className="">
-                <Link href="https://github.com/Reinhardt254/helpingheartsfoundation">
-                  <Github size={24} color="white" fill="white" className="" />
-                </Link>
-              </div>
-            </div>
-            <div className="flex-col sm:flex-row flex relative">
-              <Image
-                alt="project"
-                src="/projects/helping.png"
-                width={400}
-                height={200}
-                className="rounded-t-md"
-              />
-              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0">
-                A non-govermental organization website built with NextJs and
-                Tailwind. The website is simple website that describes what the
-                organization do and how to donate for their cause.
-              </p>
-            </div>
-            <div>
-              <div className="pb-2 mt-3">
-                <div className="flex space-x-3 font-semibold text-sm flex-wrap md:w-2/5 shadow-xl  rounded-b-lg pb-3 px-3">
-                  <p className="bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300">
-                    NextJS
-                  </p>
-                  <p className="bg-blue-900 rounded-3xl px-3 py-1 text-center text-gray-300">
-                    Tailwind
-                  </p>
-                </div>
-              </div>
-              9
-            </div>
-          </section>
-
-          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-11/12  sm:w-2/3">
+          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-full  sm:w-full">
             <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2">
               <div className="">
                 <Link href="https://g-p-3.vercel.app">
@@ -267,15 +237,15 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex-col sm:flex-row flex relative max-sm:justify-center max-sm:items-center">
+            <div className="flex-col sm:flex-row flex relative max-sm:justify-center max-sm:items-center w-full">
               <Image
                 alt="project"
                 src="/projects/gpt.png"
                 width={400}
                 height={200}
-                className="rounded-t-md"
+                className="rounded-t-md w-full h-auto md:w-1/2 md:h-auto"
               />
-              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-2/5 px-3 md:px-0">
+              <p className="pt-2 text-base text-gray-400 md:pl-10 md:w-1/2 px-0 md:px-0 max-sm:pt-5">
                 A website with eye catching ui built with React and SAAS. The
                 website is inspired with the recent rise of AI technoligies
                 including chatgpt. The website is responsive in all applications
@@ -300,7 +270,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -1,13 +1,15 @@
-import About from '@/components/about'
+import HomeSection from '@/components/homeSection'
+import About from '@/components/homeSection'
 
 const Page = () => {
   return (
     <div className="">
-       <div className=''>
-            <About/>
-        </div>
+       <main className='home'>
+            <HomeSection/>
+        </main>
     </div>
   )
 }
 
 export default Page
+ 
