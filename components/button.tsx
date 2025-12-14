@@ -14,21 +14,13 @@ interface componentProps {
 const Button: React.FC<componentProps> = ({ link, text }) => {
   return (
     <div>
-      <div className="">
-        <div>
-          <h1></h1>
-        </div>
-        <Link href={link} className="flex justify-start">
-          <div className="flex items-center justify-center">
-            <div>
-              <h1 className="text-xl font-semibol text-blue-500">{text}</h1>
-            </div>
-            <div className="pl-0 pt-0">
-              <Lottie animationData={animationData} className="h-16 w-10" />
-            </div>
-          </div>
-        </Link>
-      </div>
+      <Link
+        href={link}
+        className="flex justify-start items-center text-lg font-semibol text-blue-500"
+      >
+        {text}
+        <Lottie animationData={animationData} className="h-14 w-10" />
+      </Link>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import StarterKit from "@tiptap/starter-kit";
 import Heading from "@tiptap/extension-heading";
 import Image from "@tiptap/extension-image";
 import Link from "@tiptap/extension-link";
+import CodeBlock from "@tiptap/extension-code-block";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -30,6 +31,7 @@ import {
   ListOrdered,
   Quote,
   Code,
+  Code2,
   Undo,
   Redo,
   Type,
@@ -38,9 +40,16 @@ import {
 const extensions = [
   StarterKit.configure({
     heading: false,
+    codeBlock: false, // Disable default codeBlock to use our configured one
   }),
   Heading.configure({
     levels: [1, 2, 3, 4, 5],
+  }),
+  CodeBlock.configure({
+    HTMLAttributes: {
+      class:
+        "bg-slate-900 border border-slate-700 rounded-lg p-4 my-4 overflow-x-auto",
+    },
   }),
   Image.configure({
     allowBase64: false,
@@ -214,7 +223,7 @@ export function TiptapEditor({
         </Button>
 
         <div className="mx-1 w-px h-6 bg-slate-600" />
-
+ 
         {/* Lists */}
         <Button
           type="button"
@@ -239,6 +248,14 @@ export function TiptapEditor({
           onClick={() => editor.chain().focus().toggleBlockquote().run()}
         >
           <Quote className="w-4 h-4" />
+        </Button>
+        <Button
+          type="button"
+          variant={editor.isActive("codeBlock") ? "default" : "outline"}
+          size="sm"
+          onClick={() => editor.chain().focus().toggleCodeBlock().run()}
+        >
+          <Code2 className="w-4 h-4" />
         </Button>
 
         <div className="mx-1 w-px h-6 bg-slate-600" />

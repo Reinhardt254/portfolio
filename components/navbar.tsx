@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { authClient } from "@/lib/auth-client";
-import { AlignCenter, BarChart3, X, User, LogOut } from "lucide-react";
+import { AlignCenter, BarChart3, X, User, LogOut, MenuIcon, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -92,8 +92,8 @@ const Navbar = () => {
   });
 
   return (
-    <div className="flex flex-row pt-5 pb-2  px-2 bg-slate-950 justify-center  items-center w-screen relative max-sm:justify-between">
-      <div className="pl-3 flex space-x-0 font-bold flex-row  items-center justify-center logo">
+    <div className="flex flex-row pt-5 pb-2  px-0 bg-slate-950 justify-center  items-center relative max-sm:justify-between navbar-container w-full">
+      <div className="pl-0 flex space-x-0 font-bold flex-row  items-center justify-center logo">
         <Link href="/">
           <Image
             src="/logo/logo.png"
@@ -105,7 +105,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="max-sm:hidden links">
+      <div className="max-sm:hidden">
         <div className="flex space-x-3">
           {routes.map((route) => (
             <div key={route.label}>
@@ -120,51 +120,8 @@ const Navbar = () => {
         </div>
       </div>
 
+
       <div className="flex  mr-0 space-x-4 font-bold text-lg flex-row justify-center items-center h-full  socials-profile">
-        <div className="text-gray-200 socials-profile-item">
-          <Link href="https://www.linkedin.com/in/reinhardtdev">
-            <Image
-              src="/socials/linkdn.png"
-              alt="profile"
-              width={20}
-              height={20}
-              className="rounded"
-            />
-          </Link>
-        </div>
-        <div className="text-gray-200 socials-profile-item">
-          <Link href="https://github.com/Reinhardt254">
-            <Image
-              src="/socials/github.jpg"
-              alt="profile"
-              width={20}
-              height={20}
-              className="rounded"
-            />
-          </Link>
-        </div>
-        <div className="text-gray-200 socials-profile-item">
-          <Link href="https://twitter.com/_chirchirkip">
-            <Image
-              src="/socials/x.png"
-              alt="profile"
-              width={20}
-              height={20}
-              className="rounded"
-            />
-          </Link>
-        </div>
-        <div className="text-gray-200 socials-profile-item">
-          <Link href="https://instagram.com/reinhardt_dev?igshid=OGQ5ZDc2ODk2ZA==">
-            <Image
-              src="/socials/insta.png"
-              alt="profile"
-              width={20}
-              height={20}
-              className="rounded"
-            />
-          </Link>
-        </div>
         <div className="pl-2 max-sm:hidden relative md:mr-5 user-menu">
           {session?.user ? (
             <div className="relative cursor-pointer">

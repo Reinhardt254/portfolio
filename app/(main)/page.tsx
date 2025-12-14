@@ -3,8 +3,8 @@ import About from '@/components/homeSection'
 
 const Page = () => {
   return (
-    <div className="">
-       <main className='home'>
+    <div className="h-full flex flex-col justify-center items-center">
+       <main className='home h-full flex flex-col justify-center items-center'>
             <HomeSection/>
         </main>
     </div>
@@ -12,4 +12,4 @@ const Page = () => {
 }
 
 export default Page
- 
+  

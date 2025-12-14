@@ -13,26 +13,11 @@ const Projects = () => {
             My recent work
           </h1>
 
-          <div
-            className="w-full opacity-70"
-            style={{
-              borderBottom: "4px dotted #3b82f6", // blue-500
-              borderImage:
-                "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
-            }}
-          />
-          <div
-            className="w-full opacity-70"
-            style={{
-              borderBottom: "4px dotted #3b82f6",
-              borderImage:
-                "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
-            }}
-          />
+          <div className="w-full content-divider" />
         </div>
         <div className="space-y-4  pt-5 w-full flex flex-col justify-center items-center h-full">
-          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-full sm:w-full">
-            <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2">
+          <section className="md:px-10 px-2 shadow-sm shadow-blue-200 rounded-md pt-4  w-full sm:w-full box-border">
+            <div className="justify-start h-full w-full sm:w-auto flex pl-5 space-x-3 pb-2 box-border">
               <div className="">
                 <Link href="https://quoteme-reinhardt254.vercel.app">
                   <ExternalLink

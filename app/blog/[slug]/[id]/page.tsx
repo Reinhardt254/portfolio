@@ -3,6 +3,7 @@ import prismadb from "@/lib/prismadb";
 import Image from "next/image";
 import { ArrowLeft, Calendar } from "lucide-react";
 import Link from "next/link";
+import { CopyCodeButton } from "@/components/blog/CopyCodeButton";
 
 function formatDate(dateString: string) {
   const date = new Date(dateString);
@@ -92,11 +93,11 @@ export default async function BlogPostPage({ params }: PageProps) {
   };
 
   return (
-    <div className="bg-slate-950 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-12 max-sm:px-4 max-sm:py-7">
+    <div className="bg-slate-950 min-h-screen w-full box-border">
+      <div className="max-sm:w-[92%] w-[800px] mx-auto px-4 py-12 max-sm:px-0 max-sm:py-7 box-border">
         {/* Back Button */}
         <Link href="/blog">
-          <button className="mb-8 text-white hover:text-blue-400 transition-colors inline-flex items-center gap-2 max-sm:mb-4">
+          <button className="mb-5 text-white hover:text-blue-400 transition-colors inline-flex items-center gap-2 max-sm:mb-4 cursor-pointer">
             <ArrowLeft className="w-4 h-4" />
             Back to Blog List
           </button>
@@ -106,9 +107,11 @@ export default async function BlogPostPage({ params }: PageProps) {
         <article>
           {/* Header */}
           <header className="mb-4 max-sm:mb-4">
-            <h1 className="mb-4 text-4xl font-bold text-blue-200 pb-2 border-b-2 border-dotted border-blue-400">
+            <h1 className=" text-4xl font-bold text-blue-200 pb-4">
               {post.title}
             </h1>
+
+            <div className="content-divider mb-4" />
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-300 mt-4">
               {/* Author */}
@@ -155,9 +158,10 @@ export default async function BlogPostPage({ params }: PageProps) {
           )}
 
           {/* Content */}
-          <div className="mb-8">
+          <div className="mb-8 text-content">
+            <CopyCodeButton />
             <div
-              className="prose prose-md prose-invert max-w-none prose-headings:text-white prose-p:text-gray-300 prose-ul:text-gray-300 prose-ol:text-gray-300 prose-li:text-gray-300 prose-a:text-blue-400 prose-strong:text-white prose-code:text-blue-400 prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-700 post-content"     
+              className="prose prose-md prose-invert max-w-none prose-headings:text-white prose-p:text-gray-300 prose-ul:text-gray-300 prose-ol:text-gray-300 prose-li:text-gray-300 prose-a:text-blue-400 prose-strong:text-white prose-code:text-blue-400 prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-700 post-content"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>

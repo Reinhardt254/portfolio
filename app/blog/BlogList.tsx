@@ -98,9 +98,11 @@ export default function BlogList({ blogs }: BlogListProps) {
                   onClick={() => router.push(`/blog/${post.slug}/${post.id}`)}
                 >
                   {/* Title with dotted underline */}
-                  <h2 className="text-2xl font-bold text-blue-400 mb-3 pb-2 border-b-2 border-dotted border-blue-400 group-hover:text-blue-300 transition-colors">
+                  <h2 className="text-2xl font-bold text-blue-400 pb-2  group-hover:text-blue-300 transition-colors">
                     {post.title}
                   </h2>
+
+                  <div className="content-divider mb-3"></div>
 
                   {/* Tags and Date */}
                   <div className="flex items-center gap-4 mb-3 flex-wrap">
@@ -128,7 +130,7 @@ export default function BlogList({ blogs }: BlogListProps) {
                   )}
 
                   {/* Read more link */}
-                  <div className="text-blue-400 group-hover:text-blue-300 transition-colors inline-flex items-center gap-1">
+                  <div className="text-blue-400 group-hover:text-blue-300 transition-colors inline-flex items-center justify-start gap-1">
                     Read more <ArrowRight className="w-4 h-4" />
                   </div>
                 </article>

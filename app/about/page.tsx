@@ -8,41 +8,21 @@ const About = () => {
 
   return (
     <main className="bg-slate-950 min-h-screen py-12 pt-2">
-      <div className="max-w-4xl mx-auto px-0 space-y-0 max-sm:px-2">
-        <section className=" border p-0 shadow-lg py-8">
-          <p className="text-xs uppercase tracking-[0.3em] text-blue-400 mb-3">
-            Journal Entry :: Story
-          </p>
+      <div className="w-full mx-auto px-0 space-y-0 max-sm:px-0 box-border">
+        <section className="p-0 py-8 box-border w-full">
           <div className="flex flex-col gap-1">
             <h1 className="text-3xl md:text-4xl font-bold text-blue-200 mb-2">
-              About Me
+              My Journey Into Tech
             </h1>
-            <div
-              className="w-full opacity-70"
-              style={{
-                borderBottom: "4px dotted #3b82f6", // blue-500
-                borderImage:
-                  "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
-              }}
-            />
-            <div
-              className="w-full opacity-70"
-              style={{
-                borderBottom: "4px dotted #3b82f6",
-                borderImage:
-                  "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
-              }}
-            />
+            <div className="w-full content-divider" />
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400 mt-2">
-              <span className="uppercase tracking-wide text-slate-500">
-                Curiosity Log
+              <span className="capitalize tracking-wide text-slate-500">
+                My Story
               </span>
               <span className="text-slate-600">::</span>
               <span className="text-blue-300 font-semibold">
                 Reinhardt Lagat
               </span>
-              <span className="text-slate-600 hidden sm:inline">•</span>
-              <span className="text-slate-400">#story #craft #curiosity</span>
             </div>
           </div>
           <div className="mt-5 space-y-6">
@@ -83,7 +63,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="border p-0 shadow-lg py-8 max-sm:py-0">
+        <section className=" p-0 py-8 max-sm:py-0 max-sm:pb-5 box-border w-full">
           <div className="flex flex-col gap-3 mb-6">
             <div className="flex flex-col items-start gap-1">
               <div>
@@ -92,22 +72,7 @@ const About = () => {
                 </h2>
               </div>
 
-              <div
-                className="w-full opacity-70"
-                style={{
-                  borderBottom: "4px dotted #3b82f6", // blue-500
-                  borderImage:
-                    "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
-                }}
-              />
-              <div
-                className="w-full opacity-70"
-                style={{
-                  borderBottom: "4px dotted #3b82f6",
-                  borderImage:
-                    "repeating-linear-gradient(90deg, #3b82f6 0 4px, transparent 4px 8px) 10",
-                }}
-              />
+              <div className="w-full content-divider" />
             </div>
             <p className="text-sm text-slate-400">
               A collection of the languages, frameworks, and tools I reach for
@@ -115,10 +80,10 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap gap-4 sm:gap-4">
             {data.map((item) => (
               <div key={item.name}>
-                <div className=" p-3">
+                <div className="p-0">
                   <div>
                     <div>
                       <Image

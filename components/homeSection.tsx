@@ -1,18 +1,18 @@
-import Link from "next/link";
+import Link from "next/link"; 
 import Navbar from "./navbar";
 import Button from "./button";
 const HomeSection = () => {
   return (
-    <div className="">
-      <div className="sm:flex-row flex-col sm:flex sm:justify-between bg-slate-950 md:px-0 px-2 justify-center items-center flex h-full pb-20 max-sm:pt-14">
-        <div className="flex flex-col justify-center items-center md:py-5">
-          <div className="md:pt-0">
-            <h1 className="text-gray-300 font-bold md:text-2xl md:pt-3 text-xl">
+    <div className="h-full flex flex-col justify-center items-center">
+      <div className="sm:flex-row flex-col sm:flex sm:justify-between bg-slate-950 md:px-0 px-2 justify-center items-center flex h-full pb-20 max-sm:pt-14 max-sm:px-0">
+        <div className="flex flex-col justify-center items-center md:py-5 h-auto">
+          <div className="md:pt-0 h-auto">
+            <p className="text-gray-300 font-bold md:text-2xl md:pt-3 text-xl">
               Hi, my name is
-            </h1>
-            <h1 className="text-gray-300 font-bold text-4xl md:text-3xl md:pt-7 pt-5">
+            </p>
+            <p className="text-gray-300 font-bold text-4xl md:text-3xl md:pt-7 pt-5">
               Reinhardt Lagat
-            </h1>
+            </p>
             <p className="font-bold md:text-5xl mt-1 text-gray-300 md:pt-7 pt-3 text-3xl">
               I build things for the web
             </p>

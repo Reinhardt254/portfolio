@@ -49,11 +49,11 @@ export default function SignInPage() {
   };
 
   return (
-    <div className="h-full flex justify-center items-center pt-10 bg-slate-950 min-h-screen">
+    <main className="h-full flex justify-center items-center pt-10 bg-slate-950 min-h-[80vh] max-sm:min-h-auto">
       <Toaster />
-      <div className="w-full max-w-md px-6 mb-20">
-        <div className="bg-slate-900 rounded-lg shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-blue-300 mb-6 text-center">
+      <div className="w-full max-w-[400px] px-0 mb-20">
+        <div className="bg-slate-800 rounded-lg p-8 box-border border border-slate-800">
+          <h1 className="text-4xl font-bold text-blue-300 mb-6 text-center">
             Sign In
           </h1>
 
@@ -91,7 +91,7 @@ export default function SignInPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-blue-700 disabled:bg-gray-500 py-3 px-5 rounded text-gray-300 font-semibold hover:bg-blue-600 transition-colors"
+              className="w-full bg-blue-700 disabled:bg-gray-500 py-3 px-5 rounded text-gray-300 font-semibold hover:bg-blue-600 transition-colors cursor-pointer"
             >
               {loading ? "Signing in..." : "Sign In"}
             </button>
@@ -102,7 +102,7 @@ export default function SignInPage() {
               Don't have an account?{" "}
               <Link
                 href="/sign-up"
-                className="text-blue-400 hover:text-blue-300"
+                className="text-blue-400 hover:text-blue-300 cursor-pointer"
               >
                 Sign up
               </Link>
@@ -114,6 +114,6 @@ export default function SignInPage() {
           </div> */}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

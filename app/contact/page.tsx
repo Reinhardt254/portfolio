@@ -48,16 +48,20 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-slate-950 w-screen pb-20 flex items-center justify-center">
-      <div className="h-full md:w-1/3 w-full px-8 sm:w-2/3">
+    <main className="h-full bg-slate-950 pb-10 flex justify-center items-center max-sm:pb-20">
+      <div className="h-full md:w-[600px] w-full px-0  box-border min-h-[80vh]  max-sm:min-h-auto justify-center items-center">
         <Toaster />
-        <div className="pr-0">
-          <div className="pt-10 flex justify-start items-center">
-            <h1 className="text-blue-300 text-xl md:text-xl text-start font-semibold pl-8 pr-">
+        <div className="pr-0 box-border w-full ">
+          <div className="pt-10 flex justify-space-between items-center w-full pb-2">
+            <h1 className="text-blue-300 text-2xl md:text-4xl text-start font-semibold pl-0 ">
               Send me a message
             </h1>
-            <Lottie animationData={animationData} className="h-10 w-10 pl-2" />
+            <Lottie animationData={animationData} className="h-8 w-auto pl-2" />
           </div>
+
+          <p className="text-gray-400 text-md">
+            I'm always looking for new opportunities and collaborations. If you have any questions or want to work together, please feel free to contact me.
+          </p>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex space-y-4 h-full flex-col justify-center items-center pt-7"
@@ -66,7 +70,7 @@ const Contact = () => {
               {...register("name")}
               type="name"
               placeholder="name"
-              className="px-4 py-3 rounded sm:w-96 bg-gray-300 w-full"
+              className="px-4 py-3 rounded  bg-gray-300 w-full"
             />
             {errors.name && (
               <p className="text-red-500">{errors.name.message}</p>
@@ -76,7 +80,7 @@ const Contact = () => {
               {...register("email")}
               type="email"
               placeholder="email"
-              className="px-4 py-3 rounded sm:w-96 bg-gray-300 w-full"
+              className="px-4 py-3 rounded  bg-gray-300 w-full"
             />
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
@@ -85,7 +89,7 @@ const Contact = () => {
             <textarea
               {...register("message")}
               placeholder="Enter message here"
-              className="px-4 py-2 rounded h-60 sm:w-96 bg-gray-300 w-full"
+              className="px-4 py-2 rounded h-60  bg-gray-300 w-full"
             />
             {errors.message && (
               <p className="text-red-500">{errors.message.message}</p>
@@ -116,7 +120,7 @@ const Contact = () => {
           <Button text="Go back home" link="/" />
         </div> */}
       </div>
-    </div>
+    </main>
   );
 };
 
